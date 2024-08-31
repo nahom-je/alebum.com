@@ -1,0 +1,115 @@
+body{
+    background-image: url("folder/image/wp.jpg");
+    background-repeat: no-repeat;
+    background-size: 1350px 1000px;
+}
+.font{
+    font-weight:lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(28, 28, 28);
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    font-size: 70px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.gen{
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size:20px;
+    color:rgb(39, 37, 37);
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.gen2{
+    margin-left: 75px;
+    margin-top: 50px;
+}
+.hands{
+    margin-left: 50px; 
+}
+.iq{
+    background-color: rgb(39, 37, 37);
+    border-radius: 10px;
+    border:none;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    width:70px;
+    transform: scaleY(-1);
+}
+.ic{
+    background-color: rgb(39, 37, 37);
+    border-radius: 10px;
+    border:none;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    width:70px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.i0{
+    background-color:rgb(39, 37, 37) ;
+    transform: scaleY(-1);
+    border-radius: 20px;
+    border:none;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin-top: 10px;
+}
+.i2{
+    background-color:rgb(39, 37, 37) ;
+    margin-left: 45px;
+    border-radius: 20px;
+    border:none;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+}
+.i0:hover{
+    background-color:black;
+}
+.i2:hover{
+    background-color:black;
+}
+.i1{
+    width:150px; 
+    
+}
+
+.i3{
+    width: 150px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.same{
+    margin-left:10px;
+    font-size: 35px;
+}
+.dif{
+    margin-left:10px;
+    font-size: 35px;
+}
+.dom1{
+    font-size: 30px;
+    color:rgb(39, 37, 37) ;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dom2{
+    font-size: 20px;
+    color:rgb(39, 37, 37) ;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}   
+.dom{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(39, 37, 37) ;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.rest{
+    margin-top: 10px;
+    margin-left:520px;
+    border-radius: 30px;
+    border-width: 25px;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(39, 37, 37);
+    background-color: rgb(254, 186, 59);
+    text-shadow: 5px 5px 5px rgba(0,0,0,1); 
+}

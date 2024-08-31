@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="general" >
+      <div class="gen2">
+      
+        <h1 class="font">Ale - Bum</h1>
+      </div>
+        <div class="hands">
+
+
+<button onclick="
+
+   playgame('upper');
+
+" class="i0"><img class="i1" src="folder/image/UPPER.png"></button>
+
+
+<button onclick="
+   
+   playgame('lower');
+
+" class="i2"><img class="i3" src="folder/image/LOWER.png"></button>
+
+<p class="dom1"></p>
+
+<p class="dom2"></p>
+
+<p class="dom"></p>
+
+   </div>
+
+        
+               <div class="gen">
+               <h3>>If both are same - called - <span class="same">ANDAYNET</span></h3>
+               <h3>>If they are not  - called - <span class="dif">LEYU</span></h3>
+               <h2 class="EG">ETHIOPIAN GAME</h2>
+        </div>
+         
+        <button onclick="
+                  value.ANDAYNET = 0;
+                  value.LEYU = 0;
+                  update();
+         " class="rest">Reset</button>
+        
+        <script> 
+
+        const value = {
+         ANDAYNET: 0,
+         LEYU: 0
+         };
+
+      update();
+
+      function playgame(picked){
+
+      const computerNumber = pickedComputerNumber(); 
+
+            let result = '';
+
+            if(picked === 'upper'){
+
+            if( computerNumber === 'UPPER')
+            {
+               result = 'ANDAYNET';
+            }
+            else if ( computerNumber === 'LOWER')
+            {
+               result = 'LEYU';
+            } 
+
+            if( result === 'ANDAYNET'){
+               
+               value.ANDAYNET =  value.ANDAYNET + 1 ;
+
+            }
+            else if ( result === 'LEYU')
+            {
+               value.LEYU = value.LEYU + 1 ;
+            }
+
+               update();
+
+               document.querySelector('.dom1').innerHTML = result;
+
+               document.querySelector('.dom2')
+               .innerHTML = `You picked: <img class="iq" src="folder/image/${picked}.png"> (${picked}) - Computer picked:  (${computerNumber})`;              
+         
+         
+            }
+
+               else if(picked === 'lower')
+               {
+               const computerNumber = pickedComputerNumber();
+
+                     let result = '';
+
+                     if( computerNumber === 'UPPER')
+                     {
+                     result = 'LEYU';
+                     }
+                     else if ( computerNumber === 'LOWER')
+                     {
+                     result = 'ANDAYNET';
+                     }
+
+                        if( result === 'LEYU'){
+                           
+                           value.LEYU =  value.LEYU + 1 ;
+
+                        }
+                        else if ( result === 'ANDAYNET')
+                        {
+                           value.ANDAYNET =  value.ANDAYNET + 1 ;
+                        }
+                        
+
+                        update();
+
+                        document.querySelector('.dom1').innerHTML = result;
+
+                        document.querySelector('.dom2')
+                        .innerHTML = `You picked: <img class="ic" src="folder/image/${picked}.png"> (${picked}) - Computer picked:  (${computerNumber})`;              
+
+
+            }
+
+      }
+
+      function update(){
+
+         document.querySelector('.dom')
+         .innerHTML = `ANDAYNET : ${value.ANDAYNET} - LEYU : ${value.LEYU} `;
+
+      }
+
+
+       function pickedComputerNumber()
+        {
+                  const randomNumber = Math.random() ;
+
+                   let computerNumber = '';
+
+                  if( randomNumber >= 0 &&  randomNumber < 1/2 )
+                  {
+                     computerNumber = 'UPPER';
+                  }
+                  else if(  randomNumber >= 1/2 &&  randomNumber < 1 )
+                  {
+                     computerNumber = 'LOWER';
+                  }          
+        return computerNumber;
+       }
+        </script>
+    </body>
+</html>
